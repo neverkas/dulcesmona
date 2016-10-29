@@ -7,18 +7,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>The Restaurant for Iphone, Android and Smartphone Mobile Website Template | About :: w3layouts</title>
+<title>Dulces Mona</title>
 <meta name="keywords" content="Restaurant Iphone web template, Android web template, Smartphone web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(
 hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+<link href="css/bjqs.css" rel="stylesheet" type="text/css"  media="all" />
 <link href="css/demo.css" rel="stylesheet" type="text/css"  media="all" />
 <link href='//fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Stalemate|Electrolize' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'>
-	<script src="js/jquery-1.7.1.min.js"></script>
+		<script src="js/jquery-1.7.1.min.js"></script>
 </head>
 	<body>
 		<div class="wrap">
@@ -30,6 +31,7 @@ hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </scri
 			<div class="top-menu">
 				<ul>
 					<li class="current"><a href="index.html">Inicio</a></li>
+					<li class="submemu"><a href="about.html">Quienes Somos</a></li>
 					<li class="submemu"><a href="events.html">Eventos</a></li>
 					<li class="submemu"><a href="gallery.html">Galeria</a></li>
 					<li class="submemu"><a href="menu.html">Menu</a></li>
@@ -40,36 +42,46 @@ hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </scri
 				
 			</div>
 			<div class="img-slider">
-				<div id="container">
+			<div id="container">
+				 <!--  Outer wrapper for presentation only, this can be anything you like -->
+				<div id="banner-fade">
+					<script src="js/responsiveslides.min.js"></script>
+						<script>
+									// You can also use "$(window).load(function() {"
+									$(function () {
+									 // Slideshow 4
+									$("#slider3").responsiveSlides({
+										auto: true,
+										pager: true,
+										nav: false,
+										speed: 500,
+										namespace: "callbacks",
+										before: function () {
+									$('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+										$('.events').append("<li>after event fired.</li>");
+										}
+										});
+										});
+						</script>
+						<div  id="top" class="callbacks_container">
+							<ul class="rslides" id="slider3">
+								  <li><img src="images/slide1.jpg"/></li>
+								  <li><img src="images/slide2.jpg"/></li>
+								  <li><img src="images/slide3.jpg"/></li>
+							</ul>
+						</div>
+				</div>
 			</div>
-		<div class="about-grids">
-			<div class="about-grid1">
-				<h3>QUIENES SOMOS</h3>
-				<img src="images/1page_img4.jpg" title="img1"/>
-
-				<p>Te damos la opción de ambientar tu cumpleaños , casamiento, bautismo, nacimiento y otras fiestas con propuestas personalizadas de un menú dulce delicioso, casero y tentador.
-Hoy Dulces Mona abre sus puertas en en la calle Estado De Israel Al 4200 (Almagro). Su horario de atención es de lunes a sábados de 10 hs a 20 hs.
-Para la realización de este trabajo práctico se parte de un evento confirmado para 80 personas. A partir de esto se elabora una propuesta de catering dulce acorde al tipo de evento</p>
-			<p style="font-family: 'Stalemate', cursive, cursive;font-size:37px;margin:20px 0px;text-align:center;">"Dulces Mona es una empresa de catering dedicada exclusivamente a la elaboración de mesas dulces, postres y tortas de vanguardia para todo tipo de eventos . ..."</p>
-<p>La empresa nace el 2015 como idea de un grupo de cinco jóvenes pasteleros que cursando sus últimas materias comienzan a elaborar mesas dulces y con el tiempo deciden expandir el proyecto.
-</p>
-			</div>
+		<div class="grids">
+			<div class="grid1">
+				<h2>Bienvenido!</h2>
+				<img src="images/1page_img1.jpg">
+		</div>	
+		<div class="clear">
+			
 		</div>
-		
-		<div class="about-staff">
-			<h4>NUESTRO EQUIPO</h4>
-			<ul>
-				<li><img src="images/staff1.jpg" title="staff1"/><h5>Gastronómicos Profesionales</h5>
-					<p>
-"Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim..."</p>
-				</li>
-				<li><img src="images/staff2.jpg" title="staff1"/><h5>Maquinaria de punta</h5>
-					<p>
-"Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim..."</p>
-				</li>
-			</ul>
-		</div>
-		
 		<div class="clear">
 			
 		</div>
@@ -77,6 +89,7 @@ Para la realización de este trabajo práctico se parte de un evento confirmado 
 			<div class="footer-menu">
 				<ul>
 					<li class="current"><a href="index.html">Inicio</a></li>
+					<li class="submemu"><a href="about.html">Quienes Somos</a></li>
 					<li class="submemu"><a href="events.html">Eventos</a></li>
 					<li class="submemu"><a href="gallery.html">Galeria</a></li>
 					<li class="submemu"><a href="menu.html">Menu</a></li>
