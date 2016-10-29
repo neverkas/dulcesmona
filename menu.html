@@ -43,35 +43,6 @@ hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </scri
 			<div class="img-slider">
 			<div id="container">
 				 <!--  Outer wrapper for presentation only, this can be anything you like -->
-				<div id="banner-fade">
-					<script src="js/responsiveslides.min.js"></script>
-						<script>
-									// You can also use "$(window).load(function() {"
-									$(function () {
-									 // Slideshow 4
-									$("#slider3").responsiveSlides({
-										auto: true,
-										pager: true,
-										nav: false,
-										speed: 500,
-										namespace: "callbacks",
-										before: function () {
-									$('.events').append("<li>before event fired.</li>");
-									},
-									after: function () {
-										$('.events').append("<li>after event fired.</li>");
-										}
-										});
-										});
-						</script>
-						<div  id="top" class="callbacks_container">
-							<ul class="rslides" id="slider3">
-								  <li><img src="images/slide1.jpg"/></li>
-								  <li><img src="images/slide2.jpg"/></li>
-								  <li><img src="images/slide3.jpg"/></li>
-							</ul>
-						</div>
-				</div>
 			</div>
 		<div class="grids">
 			<div class="lists">
